@@ -66,18 +66,23 @@ h1,h2,h3,h4,h5,h6{
 .info-section{
   background-color:#fff;
   padding:30px 60px;
-  text-align:center;
 }
-.info-section.whatido header h2{
+.info-section header h2{
+  text-align:center;
   text-transform:uppercase;
 }
-.info-section.whatido header h2:after{
+.info-section header h2:after{
   border-bottom: 3px solid black;
   display: table;
   content: "";
   width: 50px;
   margin: 10px auto;
 }
+.whatido,
+.photos{
+  text-align:center;
+}
+
 .info-section__description{
   font-style:italic;
 }
@@ -109,4 +114,39 @@ h1,h2,h3,h4,h5,h6{
   padding-top:100px;
   float:left;
   width:33.3%;
+}
+
+
+.info-section ul{
+  list-style:none;
+  padding:0;
+}
+
+.education-experience__list img{
+  width:180px;
+  height:180px;
+  float:left;
+}
+.education-experience__list li,
+.education-experience__list article{
+  overflow:hidden;
+}
+.education-experience__list li{
+  margin-top:50px;
+}
+.education-experience__list article{
+  padding-left:40px;
+}
+
+.photos ul{
+  overflow:hidden;
+}
+.photos li{
+  float:left;
+  width:25%;
+  padding:10px;
+  box-sizing:border-box;
+}
+.photos li img{
+  width:100%;
 }
